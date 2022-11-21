@@ -6,7 +6,7 @@
                 required
             >
                 <a-input
-                    :placeholder="`王立群${$t(
+                    :placeholder="`安通物流${$t(
                         'monitor.studioInfo.placeholder.studioTitle'
                     )}`"
                 />

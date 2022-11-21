@@ -46,7 +46,8 @@
 
 <script lang="ts" setup>
     import { ref } from 'vue';
-    import { queryChatList, ChatRecord } from '@/api/message';
+    import { queryChatList } from '@/api/message';
+    import type { ChatRecord } from '@/api/message';
     import useLoading from '@/hooks/loading';
     import ChatList from './chat-list.vue';
 

@@ -49,8 +49,8 @@
 <script lang="ts" setup>
     import { ref } from 'vue';
     import useLoading from '@/hooks/loading';
-    import {
-        submitChannelForm,
+    import { submitChannelForm } from '@/api/form';
+    import type {
         BaseInfoModel,
         ChannelInfoModel,
         UnitChannelModel,

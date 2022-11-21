@@ -35,7 +35,8 @@
 <script lang="ts" setup>
     import { ref } from 'vue';
     import useLoading from '@/hooks/loading';
-    import { queryProfileBasic, ProfileBasicRes } from '@/api/profile';
+    import { queryProfileBasic } from '@/api/profile';
+    import type { ProfileBasicRes } from '@/api/profile';
     import ProfileItem from './components/profile-item.vue';
     import OperationLog from './components/operation-log.vue';
 

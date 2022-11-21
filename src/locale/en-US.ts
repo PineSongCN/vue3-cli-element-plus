@@ -1,3 +1,14 @@
+// const modules = import.meta.glob<Record<string, Record<string, string>>>(
+//     ['@/components/**/locale/en-US.ts', '@/views/**/locale/en-US.ts'],
+//     { eager: true }
+// );
+// const enUS = Object.values(modules)
+//     .filter(Boolean)
+//     .map((module) => module.default)
+//     .reduce((collection, current) => {
+//         return { ...collection, ...current };
+//     }, {});
+
 import localeMessageBox from '@/components/message-box/locale/en-US';
 import localeLogin from '@/views/login/locale/en-US';
 

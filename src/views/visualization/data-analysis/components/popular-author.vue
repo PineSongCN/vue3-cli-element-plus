@@ -50,7 +50,8 @@
 <script lang="ts" setup>
     import { ref } from 'vue';
     import useLoading from '@/hooks/loading';
-    import { queryPopularAuthor, PopularAuthorRes } from '@/api/visualization';
+    import { queryPopularAuthor } from '@/api/visualization';
+    import type { PopularAuthorRes } from '@/api/visualization';
 
     const { loading, setLoading } = useLoading();
     const tableData = ref<PopularAuthorRes>({ list: [] });

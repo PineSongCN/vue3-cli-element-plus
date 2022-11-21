@@ -38,10 +38,10 @@
 <script lang="ts" setup>
     import { computed, ref } from 'vue';
     import { useI18n } from 'vue-i18n';
-    import { LineSeriesOption } from 'echarts';
+    import type { LineSeriesOption } from 'echarts';
     import { queryDataOverview } from '@/api/visualization';
     import useLoading from '@/hooks/loading';
-    import { ToolTipFormatterParams } from '@/types/echarts';
+    import type { ToolTipFormatterParams } from '@/types/echarts';
     import useThemes from '@/hooks/themes';
     import useChartOption from '@/hooks/chart-option';
 

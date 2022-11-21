@@ -13,7 +13,7 @@
     import { ref } from 'vue';
     import useLoading from '@/hooks/loading';
     import { queryContentPeriodAnalysis } from '@/api/visualization';
-    import { ToolTipFormatterParams } from '@/types/echarts';
+    import type { ToolTipFormatterParams } from '@/types/echarts';
     import useChartOption from '@/hooks/chart-option';
 
     const tooltipItemsHtmlString = (items: ToolTipFormatterParams[]) => {

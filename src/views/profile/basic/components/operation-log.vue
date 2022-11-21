@@ -52,11 +52,12 @@
 
 <script lang="ts" setup>
     import { ref } from 'vue';
-    import { queryOperationLog, operationLogRes } from '@/api/profile';
+    import { queryOperationLog } from '@/api/profile';
+    import type { OperationLogRes } from '@/api/profile';
     import useLoading from '@/hooks/loading';
 
     const { loading, setLoading } = useLoading(true);
-    const renderData = ref<operationLogRes>([]);
+    const renderData = ref<OperationLogRes>([]);
     const fetchData = async () => {
         try {
             const { data } = await queryOperationLog();

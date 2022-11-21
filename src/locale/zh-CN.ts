@@ -1,3 +1,13 @@
+// const modules = import.meta.glob<Record<string, Record<string, string>>>(
+//     ['@/components/**/locale/zh-CN.ts', '@/views/**/locale/zh-CN.ts'],
+//     { eager: true }
+// );
+// const zhCN = Object.values(modules)
+//     .filter(Boolean)
+//     .map((module) => module.default)
+//     .reduce((collection, current) => {
+//         return { ...collection, ...current };
+//     }, {});
 import localeMessageBox from '@/components/message-box/locale/zh-CN';
 import localeLogin from '@/views/login/locale/zh-CN';
 

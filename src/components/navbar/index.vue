@@ -2,15 +2,12 @@
     <div class="navbar">
         <div class="left-side">
             <a-space>
-                <img
-                    alt="logo"
-                    src="//p3-armor.byteimg.com/tos-cn-i-49unhts6dw/dfdba5317c0c20ce20e64fac803d52bc.svg~tplv-49unhts6dw-image.image"
-                />
+                <img alt="logo" :src="logo" class="logo" />
                 <a-typography-title
                     :style="{ margin: 0, fontSize: '18px' }"
                     :heading="5"
                 >
-                    Arco Pro
+                    安通物流
                 </a-typography-title>
                 <icon-menu-fold
                     v-if="appStore.device === 'mobile'"
@@ -194,6 +191,7 @@
     import { LOCALE_OPTIONS } from '@/locale';
     import useLocale from '@/hooks/locale';
     import useUser from '@/hooks/user';
+    import logo from '@/assets/images/logo/logo_transparent.png';
     import MessageBox from '../message-box/index.vue';
 
     const appStore = useAppStore();
@@ -261,6 +259,9 @@
         height: 100%;
         background-color: var(--color-bg-2);
         border-bottom: 1px solid var(--color-border);
+    }
+    .logo {
+        width: 42px;
     }
 
     .left-side {

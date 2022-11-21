@@ -29,10 +29,11 @@
 </template>
 
 <script lang="ts" setup>
-    import { ref, PropType, CSSProperties } from 'vue';
+    import { ref } from 'vue';
+    import type { PropType, CSSProperties } from 'vue';
     import useLoading from '@/hooks/loading';
-    import {
-        queryPublicOpinionAnalysis,
+    import { queryPublicOpinionAnalysis } from '@/api/visualization';
+    import type {
         PublicOpinionAnalysis,
         PublicOpinionAnalysisRes,
     } from '@/api/visualization';

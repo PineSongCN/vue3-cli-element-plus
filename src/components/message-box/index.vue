@@ -30,12 +30,8 @@
 <script lang="ts" setup>
     import { ref, reactive, toRefs, computed } from 'vue';
     import { useI18n } from 'vue-i18n';
-    import {
-        queryMessageList,
-        setMessageStatus,
-        MessageRecord,
-        MessageListType,
-    } from '@/api/message';
+    import { queryMessageList, setMessageStatus } from '@/api/message';
+    import type { MessageRecord, MessageListType } from '@/api/message';
     import useLoading from '@/hooks/loading';
     import List from './list.vue';
 

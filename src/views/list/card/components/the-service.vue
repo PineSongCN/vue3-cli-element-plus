@@ -46,7 +46,8 @@
 </template>
 
 <script lang="ts" setup>
-    import { queryTheServiceList, ServiceRecord } from '@/api/list';
+    import { queryTheServiceList } from '@/api/list';
+    import type { ServiceRecord } from '@/api/list';
     import useRequest from '@/hooks/request';
     import CardWrap from './card-wrap.vue';
 

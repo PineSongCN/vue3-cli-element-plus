@@ -57,7 +57,8 @@
 </template>
 
 <script lang="ts" setup>
-    import { PropType, computed } from 'vue';
+    import { computed } from 'vue';
+    import type { PropType } from 'vue';
     import { useRouter, useRoute } from 'vue-router';
     import { useTabBarStore } from '@/store';
     import type { TagProps } from '@/store/modules/tab-bar/types';

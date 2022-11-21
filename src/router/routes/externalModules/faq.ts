@@ -1,5 +1,5 @@
 export default {
-    path: 'https://arco.design/vue/docs/pro/faq',
+    path: 'https://www.antong56.com/biz/show?type=2',
     name: 'faq',
     meta: {
         locale: 'menu.faq',

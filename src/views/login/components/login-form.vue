@@ -1,7 +1,6 @@
 <template>
     <div class="login-form-wrapper">
         <div class="login-form-title">{{ $t('login.form.title') }}</div>
-        <div class="login-form-sub-title">{{ $t('login.form.title') }}</div>
         <div class="login-form-error-msg">{{ errorMessage }}</div>
         <a-form
             ref="loginForm"
@@ -69,9 +68,6 @@
                     :loading="loading"
                 >
                     {{ $t('login.form.login') }}
-                </a-button>
-                <a-button type="text" long class="login-form-register-btn">
-                    {{ $t('login.form.register') }}
                 </a-button>
             </a-space>
         </a-form>
@@ -148,6 +144,9 @@
     .login-form {
         &-wrapper {
             width: 320px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 20px;
         }
 
         &-title {
@@ -155,12 +154,6 @@
             font-weight: 500;
             font-size: 24px;
             line-height: 32px;
-        }
-
-        &-sub-title {
-            color: var(--color-text-3);
-            font-size: 16px;
-            line-height: 24px;
         }
 
         &-error-msg {

@@ -40,7 +40,8 @@
 </template>
 
 <script lang="ts" setup>
-    import { queryRulesPresetList, ServiceRecord } from '@/api/list';
+    import { queryRulesPresetList } from '@/api/list';
+    import type { ServiceRecord } from '@/api/list';
     import useRequest from '@/hooks/request';
     import CardWrap from './card-wrap.vue';
 

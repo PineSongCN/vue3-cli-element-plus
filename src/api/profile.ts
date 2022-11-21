@@ -36,7 +36,7 @@ export function queryProfileBasic() {
     return axios.get<ProfileBasicRes>('/api/profile/basic');
 }
 
-export type operationLogRes = Array<{
+export type OperationLogRes = Array<{
     key: string;
     contentNumber: string;
     updateContent: string;
@@ -45,5 +45,5 @@ export type operationLogRes = Array<{
 }>;
 
 export function queryOperationLog() {
-    return axios.get<operationLogRes>('/api/operation/log');
+    return axios.get<OperationLogRes>('/api/operation/log');
 }
