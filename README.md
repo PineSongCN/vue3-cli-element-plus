@@ -8,11 +8,11 @@
 </a>
 
 ## 前言
-基于 Vue3 + pinia + typescript，引用 Element Plus 组件库，方便开发。
+基于 Vue3 + pinia + typescript，引用 Acro Design 组件库，方便开发。
 
 ## 功能
 
--   [x] Element Plus
+-   [x] Acro Design
 -   [x] vite 3
 -   [x] pinia
 -   [x] typescript
@@ -33,4 +33,10 @@ npm run dev
 
 // 执行构建命令，生成的dist文件夹放在服务器下即可访问
 npm run build
+```
+
+i18n-ally存在兼容性问题，如果不能正常显示翻译，执行以下命令
+```
+cd ~/.vscode/extensions/lokalise.i18n-ally-2.8.1
+yarn add -D ts-node
 ```
