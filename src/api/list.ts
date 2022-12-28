@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from '@/utils/request';
 import qs from 'query-string';
 import type { DescData } from '@arco-design/web-vue/es/descriptions/interface';
 

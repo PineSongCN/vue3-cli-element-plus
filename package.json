@@ -31,12 +31,10 @@
     },
     "dependencies": {
         "@arco-design/web-vue": "^2.37.4",
-        "@element-plus/icons-vue": "^2.0.10",
         "@vueuse/core": "^9.3.0",
         "axios": "^0.24.0",
         "dayjs": "^1.11.5",
         "echarts": "^5.4.0",
-        "element-plus": "^2.2.22",
         "lodash": "^4.17.21",
         "mitt": "^3.0.0",
         "nprogress": "^0.2.0",

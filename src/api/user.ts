@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from '@/utils/request';
 import type { RouteRecordNormalized } from 'vue-router';
 import type { UserState } from '@/store/modules/user/types';
 

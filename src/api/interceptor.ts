@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from '@/utils/request';
 import type { AxiosRequestConfig, AxiosResponse } from 'axios';
 import { Message, Modal } from '@arco-design/web-vue';
 import { useUserStore } from '@/store';
